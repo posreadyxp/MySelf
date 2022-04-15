@@ -17,8 +17,8 @@ Acc: {member}
 Activity: {member.activity}
 Avatar: {member.avatar.url}:
     Animated? {member.avatar.is_animated()}
-Banned: {member.banner.url}:
-    Animated? {member.banner.is_animated()}
+Banner: {member.banner.url if member.banner else ''}:
+    Animated? {member.banner.is_animated() if member.banner else 'No'}
 Bot? {member.bot}
 Created: {member.created_at.strftime("%d.%m.%Y %H:%M:%S")}
 Joined: {member.joined_at.strftime("%d.%m.%Y %H:%M:%S")}
@@ -40,8 +40,8 @@ Acc: {member}
 Activity: {member.activity}
 Avatar: {member.avatar.url}:
     Animated? {member.avatar.is_animated()}
-Banned: {member.banner.url}:
-    Animated? {member.banner.is_animated()}
+Banner: {member.banner.url if member.banner else ''}:
+    Animated? {member.banner.is_animated() if member.banner else 'No'}
 Bot? {member.bot}
 Created: {member.created_at.strftime("%d.%m.%Y %H:%M:%S")}
 Joined: {member.joined_at.strftime("%d.%m.%Y %H:%M:%S")}
